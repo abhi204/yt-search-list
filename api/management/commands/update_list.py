@@ -2,7 +2,7 @@ import time, requests
 from datetime import datetime, timedelta
 from django.core.management.base import BaseCommand
 from django.utils import timezone
-from api.models import Video, API_Key
+from api.models import Video
 
 class Command(BaseCommand):
     help = 'Populates the Video table using Youtube API calls'
