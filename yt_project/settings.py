@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
 # Third-Party Apps
 INSTALLED_APPS += [
-    'rest_framework'
+    'rest_framework',
 ]
 
 # CUSTOM APPS
@@ -133,5 +133,5 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 25
+    'PAGE_SIZE': 25,
 }
