@@ -40,7 +40,9 @@ INSTALLED_APPS = [
 ]
 
 # Third-Party Apps
-INSTALLED_APPS += []
+INSTALLED_APPS += [
+    'rest_framework'
+]
 
 # CUSTOM APPS
 INSTALLED_APPS += [
@@ -126,3 +128,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# DRF configurations
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 25
+}
